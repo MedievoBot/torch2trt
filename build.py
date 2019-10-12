@@ -1,7 +1,3 @@
-import imp
-import subprocess
-import os
-from string import Template
 
 PLUGINS = [
     'interpolate',
