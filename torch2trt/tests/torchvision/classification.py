@@ -4,11 +4,6 @@ from torch2trt.module_test import add_module_test
 
     
 @add_module_test(torch.float16, torch.device('cuda'), [(1, 3, 224, 224)], fp16_mode=True)
-def alexnet():
-    return torchvision.models.alexnet(pretrained=False)
-
-
-@add_module_test(torch.float16, torch.device('cuda'), [(1, 3, 224, 224)], fp16_mode=True)
 def squeezenet1_0():
     return torchvision.models.squeezenet1_0(pretrained=False)
 
